@@ -60,10 +60,20 @@ confint90
 #####################
 #data set:
 y <- c(105, 69, 86, 100, 82, 111, 104, 110, 87, 108, 87, 90, 94, 113, 112, 98, 80, 97, 95, 111, 114, 89, 95, 126, 98)
+#set sample size as 25
+n2 <- 25
 #find the mean of the sample
-mean(y)
+xbar <- mean(y)
 #the mean score is 98.44
+s <- sd(y)
+#the standard deviation of the sample is 13.09287
 #one-sample, one-sided t-test:
+tscore <- (xbar - 100)/(sqrt((s^2)/n2))
+tscore
+#The t-score is -0.5957439. Now find the p-value:
+pt(-abs(tscore), lower.tail = FALSE, df = length(y) - 1)
+#The p-value is 0.72153.
+#Check using the t.test function:
 t.test(y, mu=100, alternative="greater", conf.level = 0.95)
 #If the average IQ of the students was 100, the probability of selecting a sample with a mean less than or equal to 98.44 is about 72%.
 #####################
@@ -115,4 +125,3 @@ plot(expenditure$X1, expenditure$Y,  col = expenditure$Region, xlab = "Personal 
 plot(expenditure$X1, expenditure$Y,  col = expenditure$Region, pch = expenditure$Region, xlab = "Personal Income (per capita)", ylab = "Public Education Expenditures (per capita)", main = "Public Education Expenditures by Personal Income")
 #Add legend explaining the colors and symbols.
 legend("topleft", title = "Region", legend = c("Northeast", "North Central", "South", "West"), col = c("black", "red", "green", "blue"), pch = c(1, 2, 3, 4))
-
