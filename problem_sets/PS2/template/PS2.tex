@@ -98,12 +98,13 @@
 	\item [(a)]
 	Calculate the $\chi^2$ test statistic by hand (even better if you can do "by hand" in \texttt{R}).\\
 	\vspace{7cm}
-	
+\lstinputlisting[language=R, firstline=1, lastline=45]{PS2_answers.R}
 	\item [(b)]
 	Now calculate the p-value (in \texttt{R}).\footnote{Remember frequency should be $>$ 5 for all cells, but let's calculate the p-value here anyway.}  What do you conclude if $\alpha = .1$?\\
-	
+\lstinputlisting[language=R, firstline=47, lastline=51]{PS2_answers.R}
 	\newpage
 	\item [(c)] Calculate the standardized residuals for each cell and put them in the table below.
+\lstinputlisting[language=R, firstline=52, lastline=71]{PS2_answers.R}
 	\vspace{1cm}
 	
 	\begin{table}[h]
@@ -112,9 +113,9 @@
 			& Not Stopped & Bribe requested & Stopped/given warning \\
 			\\[-1.8ex] 
 			\hline \\[-1.8ex]
-			Upper class  &  &  &  \\
+			Upper class  &0.322  & -1.643 &1.526  \\
 			\\
-			Lower class &  &   &   \\
+			Lower class &-0.322  & 1.644  &-1.536   \\
 			
 		\end{tabular}
 	\end{table}
@@ -122,7 +123,7 @@
 	
 	\vspace{7cm}
 	\item [(d)] How might the standardized residuals help you interpret the results?  
-	
+\lstinputlisting[language=R, firstline=72, lastline=72]{PS2_answers.R}	
 \end{enumerate}
 \newpage
 
@@ -142,12 +143,13 @@ Chattopadhyay and Duflo were interested in whether women promote different polic
 \newpage
 \begin{enumerate}
 	\item [(a)] State a null and alternative (two-tailed) hypothesis. 
-	
+\lstinputlisting[language=R, firstline=74, lastline=77]{PS2_answers.R}
 	\vspace{6cm}
 	\item [(b)] Run a bivariate regression to test this hypothesis in \texttt{R} (include your code!).
-	
+\lstinputlisting[language=R, firstline=79, lastline=99]{PS2_answers.R}
 	\vspace{6cm}
 	\item [(c)] Interpret the coefficient estimate for reservation policy. 
+\lstinputlisting[language=R, firstline=100, lastline=101]{PS2_answers.R}
 \end{enumerate}
 
 \newpage
@@ -173,35 +175,44 @@ There is a physiological cost of reproduction for fruit flies, such that it redu
 	
 	\item
 	Import the data set and obtain summary statistiscs and examine the distribution of the overall lifespan of the fruitflies.  
-
+\lstinputlisting[language=R, firstline=103, lastline=108]{PS2_answers.R}
 \newpage
 	\item
 	Plot \texttt{lifespan} vs \texttt{thorax}. Does it look like there is a linear relationship? Provide the plot. What is the correlation coefficient between these two variables?
+\lstinputlisting[language=R, firstline=109, lastline=114]{PS2_answers.R}
+\begin{figure}
+	\includegraphics{Lifespan/Thorax plot.pdf}
+\end{figure}
 		\vspace{6cm}
 	\item
 	Regress \texttt{lifespan} on \texttt{thorax}.  Interpret the slope of the fitted model.
+\lstinputlisting[language=R, firstline=115, lastline=117]{PS2_answers.R}
 			\vspace{6cm}
 	\item
 	Test for a significant linear relationship between  \texttt{lifespan} and \texttt{thorax}. Provide and interpret your results of your test.
+\lstinputlisting[language=R, firstline=118, lastline=130]{PS2_answers.R}
 	
 \newpage
 	\item
 	
 	Provide the 90\% confidence interval for the slope of the fitted model.
-	
 			\vspace{.5cm}
 	\begin{itemize}
 		\item
 		Use the formula for typical confidence intervals to find the 90\% confidence interval around the point estimate.		\vspace{.5cm}
 		\item
 		Now, try using the function  \texttt{confint()}  in \texttt{R}.
+\lstinputlisting[language=R, firstline=131, lastline=133]{PS2_answers.R}
 	\end{itemize}
 			\vspace{6cm}
 	\item Use the \texttt{predict()} function in \texttt{R} to (1) predict an individual fruitfly's lifespan when \texttt{thorax}=0.8 and (2) the average \texttt{lifespan} of fruitflies when \texttt{thorax}=0.8 by the fitted model. This requires that you compute prediction and confidence intervals. What are the expected values of lifespan? What are the prediction and confidence intervals around the expected values? 
-	
+\lstinputlisting[language=R, firstline=134, lastline=138]{PS2_answers.R}
 			\vspace{6cm}
 	\item	For a sequence of \texttt{thorax} values, draw a plot with their fitted values for \texttt{lifespan}, as well as the prediction intervals and confidence intervals.
-
+\lstinputlisting[language=R, firstline=139, lastline=142]{PS2_answers.R}
+\begin{figure}
+	\includegraphics[scale=.5]{Residuals plot.pdf}
+\end{figure}
 
 
 \end{enumerate}
