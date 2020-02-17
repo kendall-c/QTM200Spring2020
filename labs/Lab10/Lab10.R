@@ -46,12 +46,13 @@ sat2 <- lm(takers ~ expend + ratio + salary, data=sat)
 summary(sat2)
 
 # How do you interpret the coefficient for salary?
-
+#For every one percent increase in the percentage of all eligible students taking the SAT, there is, on average, a $3,602 increase in the estimate average annual salary of teachers in public schools.
 
 # What if we include all the variables in the data?
 sat3 <- lm(takers ~ ., data=sat)
 summary(sat3)
 # total is NA because it is verbal + math
+#The coefficient for salary goes down, because the other variables explain more of the variation in "takers".
 
 # Some studies show that politically irrelevant events, such as 
 # sports events and shark attacks, affect voters' retrospective

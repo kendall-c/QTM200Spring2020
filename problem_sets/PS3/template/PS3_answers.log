@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  10 FEB 2020 12:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  16 FEB 2020 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**PS2.tex
-(./PS2.tex
+**PS3_answers.tex
+(./PS3_answers.tex
 LaTeX2e <2018-12-01>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
@@ -936,8 +936,8 @@ File: listings.cfg 2019/02/27 1.8b listings configuration
 Package: listings 2019/02/27 1.8b (Carsten Heinz)
 \c@hyp=\count163
 
-(./PS2.aux)
-\openout1 = `PS2.aux'.
+(./PS3_answers.aux)
+\openout1 = `PS3_answers.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
@@ -953,7 +953,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 67.
 LaTeX Font Info:    ... okay on input line 67.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 67.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 67.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 67.
@@ -1016,15 +1017,13 @@ LaTeX Info: Redefining \ref on input line 67.
 LaTeX Info: Redefining \pageref on input line 67.
 LaTeX Info: Redefining \nameref on input line 67.
 
-(./PS2.out) (./PS2.out)
+(./PS3_answers.out) (./PS3_answers.out)
 \@outlinefile=\write7
-\openout7 = `PS2.out'.
+\openout7 = `PS3_answers.out'.
 
  ABD: EveryShipout initializing macros
 \c@lstlisting=\count171
- [1
 
-{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/02/27 1.8b listings language file
 )
@@ -1034,74 +1033,43 @@ File: lstlang2.sty 2019/02/27 1.8b listings language file
 (/usr/local/texlive/2019/texmf-dist/tex/latex/listings/lstlang3.sty
 File: lstlang3.sty 2019/02/27 1.8b listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 101.
 
-(./PS2_answers.R
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 8.
- (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 8.
+! Package Listings Error: File `PS3_answers(.R)' not found.
 
-[2])
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: R)
 
- []
+Enter file name: x
 
-(./PS2_answers.R) [3] (./PS2_answers.R) (./PS2_answers.R) [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+[1
 
- []
+{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] )
+(\end occurred inside a group at level 2)
 
-
-LaTeX Warning: Reference `fig:women_desc' on page 6 undefined on input line 133
-.
-
-<../women_desc.png, id=123, 750.805pt x 300.12125pt>
-File: ../women_desc.png Graphic file (type png)
-<use ../women_desc.png>
-Package pdftex.def Info: ../women_desc.png  used on input line 140.
-(pdftex.def)             Requested size: 516.73338pt x 206.5664pt.
-
-Overfull \hbox (46.97836pt too wide) in paragraph at lines 140--141
- [][] 
- []
-
-[6 <../women_desc.png>] (./PS2_answers.R) (./PS2_answers.R) [7]
-(./PS2_answers.R) [8] (./PS2_answers.R) [9] (./PS2_answers.R) (./PS2_answers.R)
-(./PS2_answers.R [10]) [11] (./PS2_answers.R) (./PS2_answers.R) [12]
-(./PS2_answers.R)
-
-LaTeX Warning: File `Residuals plot.pdf' not found on input line 212.
-
-
-./PS2.tex:212: Package pdftex.def Error: File `Residuals plot.pdf' not found: u
-sing draft setting.
-
-See the pdftex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.212 ...udegraphics[scale=.5]{Residuals plot.pdf}
-                                                  
-? 
-./PS2.tex:212: Emergency stop.
- ...                                              
-                                                  
-l.212 ...udegraphics[scale=.5]{Residuals plot.pdf}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
- 
+### simple group (level 2) entered at line 89 ({)
+### semi simple group (level 1) entered at line 86 (\begingroup)
+### bottom level
+(\end occurred when \ifx on line 89 was incomplete)
+(\end occurred when \ifx on line 89 was incomplete) 
 Here is how much of TeX's memory you used:
- 23514 strings out of 492616
- 405805 string characters out of 6129482
- 777413 words of memory out of 5000000
- 26800 multiletter control sequences out of 15000+600000
- 15377 words of font info for 63 fonts, out of 8000000 for 9000
+ 22292 strings out of 492616
+ 392920 string characters out of 6129482
+ 685439 words of memory out of 5000000
+ 25787 multiletter control sequences out of 15000+600000
+ 13744 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,52p,3235b,2702s stack positions out of 5000i,500n,10000p,200000b,80000s
-./PS2.tex:212:  ==> Fatal error occurred, no output PDF file produced!
+ 55i,6n,52p,3243b,490s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/tex
+mf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/local/texlive/2019/texmf-dist
+/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on PS3_answers.pdf (1 page, 50259 bytes).
+PDF statistics:
+ 38 PDF objects out of 1000 (max. 8388607)
+ 26 compressed objects within 1 object stream
+ 3 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
