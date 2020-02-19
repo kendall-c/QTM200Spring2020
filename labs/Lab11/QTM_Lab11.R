@@ -33,6 +33,7 @@ View(smoking)
 
 # (1) What is the fitted model for men?
 
+<<<<<<< HEAD
 #Recode gender into a categorical variable:
 class(smoking$gender)
 ifelse(smoking$gender=="Male", 1, 0)
@@ -47,3 +48,13 @@ lm(amtWeekdays ~ age + gender, data=smoking)
 
 # (4) The individuals in this study ranged in age from 16-97 years old. Do peope increase or decrease their volume of smoking as they get older? Justify your answer.
 #It appears that smoking increases with age, again because the coefficient associated with age is positive.
+=======
+
+# (2) What is the fitted model for women?
+
+
+# (3) Based on the estimated coefficients, does it look like men or women exhibit higher levels of smoking at every age? Justify your answer.
+
+
+# (4) The individuals in this study ranged in age from 16-97 years old. Do peope increase or decrease their volume of smoking as they get older? Justify your answer.
+>>>>>>> upstream/master
