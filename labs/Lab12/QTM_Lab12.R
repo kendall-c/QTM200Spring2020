@@ -14,7 +14,7 @@ detachAllPackages <- function() {
 }
 detachAllPackages()
 # set wd
-setwd('~/Documents/GitHub/QTM200Spring2020/labs/Lab12')
+setwd('~/GitHub/QTM200Spring2020/labs/Lab12')
 
 # load libraries
 pkgTest <- function(pkg){
@@ -44,8 +44,7 @@ colnames(x)
 
 # 1. Run a linear model with papprove as a dependent variable and 
 #    Post, osu, and the interaction of the two as independent variables.
-
-
+lm(papprove ~ Post + osu + Post:osu, data=x)
 
 
 # 2. Answer the following questions based on the results.
@@ -53,18 +52,24 @@ colnames(x)
 # 2a. What is the predicted presidential approval of OSU students who received
 #     the survey BEFORE the game?
 
+# Yi = 4.562 + -0.378(osuXi)
 
 # 2b. What is the predicted presidential approval of OSU students who received
 #     the survey AFTER the game?
 
+# Yi = -0.4469(PostXi) + -0.378(osuXi) + 0.896(PostXi, osuXi)
 
 # 2c. What is the predicted presidential approval of UO students who received
 #     the survey BEFORE the game?
 
+# Yi = 4.5619
 
 # 2d. What is the predicted presidential approval of UO students who received
 #     the survey AFTER the game?
 
+# Yi = 4.5619 + -0.4469(PostXi)
 
 # 3e. What is the marginal effect of Post on presidential approval
 #     when osu=1?
+
+# pre-osu - post-osu
