@@ -32,6 +32,7 @@
 \usepackage{url}
 \usepackage{listings}
 \usepackage{color}
+\usepackage{pdfpages}
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
 \definecolor{codegray}{rgb}{0.5,0.5,0.5}
@@ -87,28 +88,24 @@ Answer the following questions:
 \begin{enumerate}[(a)]
 	 \item Check the constant variance assumption for the errors by plotting the residuals versus the fitted values.
 \lstinputlisting[language=R, firstline=45, lastline=54]{PS5_answers.R}
-\begin{figure}
-	\includegraphics[width=.5]{ResidFVplot.pdf}
-	\end{figure}
+\includepdf[pages={1}]{ResidFVplot.pdf}
 	 
 	  \newpage
 	\item Check the normality assumption with a Q-Q plot of the studentized residuals. \vspace{1cm}
 \lstinputlisting[language=R, firstline=56, lastline=63]{PS5_answers.R}
-\begin{figure}
-	\includegraphics[width=.5]{QQplot.pdf}\\
-	\end{figure}
+
+\includepdf[pages={1}]{QQplot.pdf}
+	
 	\item Check for large leverage points by plotting the $h$ values. \vspace{1cm}
 \lstinputlisting[language=R, firstline=65, lastline=77]{PS5_answers.R}
-\begin{figure}
-	\includegraphics[width=.5]{hvalueplot.pdf}\\
-	\end{figure}
+\includepdf[pages={1}]{hvalueplot.pdf}
+
 	\item Check for outliers by running an \texttt{outlierTest}. \vspace{1cm}
 \lstinputlisting[language=R, firstline=79, lastline=81]{PS5_answers.R}
 	\item Check for influential points by creating a "Bubble plot" with the hat-values and studentized residuals.
 \lstinputlisting[language=R, firstline=83, lastline=95]{PS5_answers.R}
-\begin{figure}
-	\includegraphics[width=.5]{bubbleplot.pdf}\\
-	\end{figure}
+\includepdf[pages={1}]{bubbleplot.pdf}
+
 	% \item N/A.
 \end{enumerate}
 
